@@ -17,3 +17,25 @@
 // Explanation:
 // const newArray = filter(arr, fn); // [20, 30]
 // The function filters out values that are not greater than 10
+
+var filter = function(arr, fn) {
+  let result = []
+  for(let i = 0 ; i < arr.length ; i++) {
+    if(fn(arr[i], i)){
+       result.push(arr[i])
+    }
+  } 
+  return result
+};
+
+// console.log(
+//     filter([10 , 5 , 20 , 4 , 30], function(n){
+//         return n > 10
+//     }  )
+// );
+
+console.log(
+    filter([10 , 5 , 20 , 4 , 30], function(n , i){
+        return i === 0 
+    }  )
+);

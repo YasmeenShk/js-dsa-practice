@@ -23,7 +23,7 @@ var map = function(arr, fn) {
 };
 
 console.log(
-    map([1 , 2, 3], function(n ){
+    map([1 , 2, 3], function(n){
     return n + 1 
 }));
 
